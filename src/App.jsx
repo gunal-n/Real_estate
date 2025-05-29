@@ -6,6 +6,7 @@ import Testimonials from './components/Testimonials'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
 import { Bounce, ToastContainer } from 'react-toastify'
+import Abbout from './components/Abbout'
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
       <Testimonials />
       <Contact />
       <Footer />
+      <Abbout />
     </div>
   )
 }

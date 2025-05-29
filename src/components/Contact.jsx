@@ -11,7 +11,7 @@ const Contact = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "b2e9a9d1-626c-42c1-babd-74f76781ef05");
+    formData.append("access_key", "67eece78-75bc-4479-8bcd-1da60a0a02dd");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -40,7 +40,7 @@ const Contact = () => {
     initial={{ opacity: 0,x:-200 }}
       transition={{duration:1}}
       whileInView={{ opacity: 1 ,x:0}}
-      viewport={{once:true}}
+      viewport={{once:true}}  
     
     className='text-center p-6 py-20 lg:px-32 w-full overflow-hidden' id='Contact'>
         <h1 className='text-2xl sm:text-4xl font-bold mb-2 text-center'>Contact <span className='underline underline-offset-4 decoration-1 under font-light'>With  Us</span></h1>
@@ -48,11 +48,11 @@ const Contact = () => {
     <form onSubmit={onSubmit} className='max-w-2xl mx-auto text-gray-600 pt-8'>
         <div className='flex flex-wrap'>
             <div className='w-full md:w-1/2 text-left'>Your Name
-            <input className='w-full border border-gray-300 rounded py-3 px-4 mt-2' type='text' placeholder='Your Name' required/>
+            <input className='w-full border border-gray-300 rounded py-3 px-4 mt-2' type='text' name = "name"placeholder='Your Name' required/>
             </div>
         
             <div className='w-full md:w-1/2 text-left md:pl-4'>Your Email
-            <input className='w-full border border-gray-300 rounded py-3 px-4 mt-2' type='email' placeholder='Your Email' required/>
+            <input className='w-full border border-gray-300 rounded py-3 px-4 mt-2' type='email' name="email"  placeholder='Your Email' required/>
             </div>
         </div>
         <div className='my-6 text-left'>
